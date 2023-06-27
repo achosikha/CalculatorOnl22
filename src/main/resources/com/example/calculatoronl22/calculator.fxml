@@ -55,29 +55,29 @@
          <children>
             <TextField layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="232.0" fx:id="expression" editable="false"/>
             <Button layoutX="14.0" layoutY="51.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="\%" />
-            <Button layoutX="70.0" layoutY="51.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="CE" />
-            <Button layoutX="130.0" layoutY="51.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="C" />
-            <Button layoutX="189.0" layoutY="51.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Back" />
+            <Button layoutX="70.0" layoutY="51.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="CE" onAction="#clear"/>
+            <Button layoutX="130.0" layoutY="51.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="C" onAction="#clear"/>
+            <Button layoutX="189.0" layoutY="51.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Back" onAction="#backspace"/>
             <Button layoutX="14.0" layoutY="108.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="1/x" />
             <Button layoutX="70.0" layoutY="108.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="x2" />
             <Button layoutX="130.0" layoutY="108.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="2/x" />
-            <Button layoutX="189.0" layoutY="108.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="/" />
-            <Button layoutX="13.0" layoutY="166.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="7" />
-            <Button layoutX="69.0" layoutY="166.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="8" />
-            <Button layoutX="129.0" layoutY="166.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="9" />
-            <Button layoutX="188.0" layoutY="166.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="*" />
-            <Button layoutX="13.0" layoutY="224.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="4" />
-            <Button layoutX="69.0" layoutY="224.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="5" />
-            <Button layoutX="129.0" layoutY="224.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="6" />
-            <Button layoutX="188.0" layoutY="224.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="-" />
-            <Button layoutX="13.0" layoutY="282.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="1" />
-            <Button layoutX="69.0" layoutY="282.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="2" />
-            <Button layoutX="129.0" layoutY="282.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="3" />
-            <Button layoutX="188.0" layoutY="282.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="+" />
+            <Button layoutX="189.0" layoutY="108.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="/" onAction="#mathExpression"/>
+            <Button layoutX="13.0" layoutY="166.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="7" onAction="#insertNum"/>
+            <Button layoutX="69.0" layoutY="166.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="8" onAction="#insertNum"/>
+            <Button layoutX="129.0" layoutY="166.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="9" onAction="#insertNum"/>
+            <Button layoutX="188.0" layoutY="166.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="*" onAction="#mathExpression"/>
+            <Button layoutX="13.0" layoutY="224.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="4" onAction="#insertNum"/>
+            <Button layoutX="69.0" layoutY="224.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="5" onAction="#insertNum"/>
+            <Button layoutX="129.0" layoutY="224.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="6" onAction="#insertNum"/>
+            <Button layoutX="188.0" layoutY="224.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="-" onAction="#mathExpression"/>
+            <Button layoutX="13.0" layoutY="282.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="1" onAction="#insertNum"/>
+            <Button layoutX="69.0" layoutY="282.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="2" onAction="#insertNum"/>
+            <Button layoutX="129.0" layoutY="282.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="3" onAction="#insertNum"/>
+            <Button layoutX="188.0" layoutY="282.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="+" onAction="#mathExpression"/>
             <Button layoutX="13.0" layoutY="341.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="+/-" />
-            <Button layoutX="69.0" layoutY="341.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="0" />
+            <Button layoutX="69.0" layoutY="341.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="0" onAction="#insertNum"/>
             <Button layoutX="129.0" layoutY="341.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="." />
-            <Button layoutX="188.0" layoutY="341.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="=" onAction="#showMsg"/>
+            <Button layoutX="188.0" layoutY="341.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="=" onAction="#mathExpressionResult"/>
          </children>
     </AnchorPane>
   </children>
